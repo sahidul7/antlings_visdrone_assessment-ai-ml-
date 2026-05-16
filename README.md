@@ -71,34 +71,10 @@ A complete **computer vision pipeline** for analyzing drone/aerial imagery from 
 
 ---
 
-## 📁 Repository Structure
 
-```
-antlings-drone-detection/
-│
-├── antlings_visdrone_assessment_final_.ipynb   ← ✅ Main notebook — run this on Kaggle
-│
-├── src/
-│   ├── detect.py            Standalone CLI: inference + ByteTrack on image/video/folder
-│   ├── convert_labels.py    VisDrone raw annotations → YOLO normalized format
-│   └── utils.py             Shared helpers: bbox drawing, annotation parsing, colors
-│
-├── outputs/
-│   └── sample_results/      All output PNGs from the notebook
-│       ├── eda_analysis.png              6-panel EDA figure
-│       ├── sample_annotations.png        GT bounding box visualization
-│       ├── detection_results.png         2×3 grid of model predictions
-│       ├── training_curves.png           Loss + mAP over 50 epochs
-│       ├── evaluation_metrics.png        Precision/Recall/mAP bar chart
-│       ├── counting_analysis.png         Human & car count histograms (100 val images)
-│       ├── gt_vs_prediction.png          Side-by-side GT vs YOLOv8n (3 images)
-│       └── tracking_frame_sample.png     ByteTrack frame with color-coded IDs
-│
-├── requirements.txt
-├── .gitignore                Excludes *.pt weights, dataset/, runs/, videos
-├── DEMO_VIDEO_SCRIPT.md      Word-for-word recording guide
-└── README.md
-```
+
+
+
 
 ---
 
